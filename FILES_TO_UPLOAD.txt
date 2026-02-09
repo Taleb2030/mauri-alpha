@@ -1,0 +1,53 @@
+FILES TO UPLOAD TO YOUR HOSTING SERVER
+========================================
+
+REQUIRED FILES AND FOLDERS:
+----------------------------
+✓ index.php
+✓ about.php
+✓ services.php
+✓ projects.php
+✓ contact.php
+✓ includes/ (entire folder)
+  - email_config.php
+  - header.php
+  - footer.php
+  - languages.php
+  - save_contact_simple.php
+✓ css/ (entire folder)
+  - style.css
+✓ assets/ (entire folder)
+  - images/
+    - Logo.png
+    - Taleb.jpg
+✓ vendor/ (entire folder - PHPMailer)
+✓ composer.json
+✓ composer.lock
+✓ .htaccess (for security)
+
+OPTIONAL (but recommended):
+----------------------------
+✓ DEPLOYMENT_CHECKLIST.md (for reference)
+✓ DEPLOYMENT_GUIDE.md (for reference)
+
+DO NOT UPLOAD (or they are protected by .htaccess):
+----------------------------------------------------
+✗ test_email.php
+✗ test_email_detailed.php
+✗ debug_email.php
+✗ check_password.php
+✗ view_contacts.php
+✗ email_debug.log
+✗ data/contacts_*.txt (these are created automatically)
+
+FOLDER PERMISSIONS:
+-------------------
+- All folders: 755
+- All PHP files: 644
+- data/ folder: 755 or 777 (needs write permission)
+
+UPLOAD LOCATION:
+----------------
+- 000webhost: public_html/
+- InfinityFree: htdocs/
+- Most other hosts: public_html/ or www/

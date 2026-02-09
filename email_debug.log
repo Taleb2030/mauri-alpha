@@ -1,0 +1,785 @@
+2026-02-08 17:50:38 - SERVER -> CLIENT: 
+2026-02-08 17:50:38 - SMTP Error: Could not connect to SMTP host.
+2026-02-08 17:50:38 - EXCEPTION: PHPMailer Error: SMTP Error: Could not connect to SMTP host. | PHPMailer ErrorInfo: SMTP Error: Could not connect to SMTP host.
+2026-02-08 17:51:00 - SERVER -> CLIENT: 
+2026-02-08 17:51:00 - SMTP Error: Could not connect to SMTP host.
+2026-02-08 17:51:00 - EXCEPTION: PHPMailer Error: SMTP Error: Could not connect to SMTP host. | PHPMailer ErrorInfo: SMTP Error: Could not connect to SMTP host.
+2026-02-08 17:55:37 - SERVER -> CLIENT: 
+2026-02-08 17:55:37 - SMTP Error: Could not connect to SMTP host.
+2026-02-08 17:55:38 - SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 38308e7fff4ca-386b62363e9sm20579331fa.1 - gsmtp
+
+2026-02-08 17:55:38 - CLIENT -> SERVER: EHLO localhost
+
+2026-02-08 17:55:38 - SERVER -> CLIENT: 250-smtp.gmail.com at your service, [82.165.196.191]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2026-02-08 17:55:38 - CLIENT -> SERVER: AUTH LOGIN
+
+2026-02-08 17:55:38 - SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2026-02-08 17:55:38 - CLIENT -> SERVER: [credentials hidden]
+2026-02-08 17:55:38 - SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2026-02-08 17:55:38 - CLIENT -> SERVER: [credentials hidden]
+2026-02-08 17:55:39 - SERVER -> CLIENT: 235 2.7.0 Accepted
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: MAIL FROM:<taleb.chrif200@gmail.com>
+
+2026-02-08 17:55:39 - SERVER -> CLIENT: 250 2.1.0 OK 38308e7fff4ca-386b62363e9sm20579331fa.1 - gsmtp
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: RCPT TO:<taleb.chrif200@gmail.com>
+
+2026-02-08 17:55:39 - SERVER -> CLIENT: 250 2.1.5 OK 38308e7fff4ca-386b62363e9sm20579331fa.1 - gsmtp
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: DATA
+
+2026-02-08 17:55:39 - SERVER -> CLIENT: 354 Go ahead 38308e7fff4ca-386b62363e9sm20579331fa.1 - gsmtp
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: Date: Sun, 8 Feb 2026 17:55:37 +0000
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: To: taleb.chrif200@gmail.com
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: From: Mauri-Alpha Contact Form <taleb.chrif200@gmail.com>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: Reply-To: Mauri-Alpha Contact Form <taleb.sidahmed@mail.ru>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: Subject: New Contact Form Message from Taleb
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: Message-ID: <JUfkltCIheEeSBsmDDiQ4mS5JtjbJ1fIUPOS4b7Iws@localhost>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.2 (https://github.com/PHPMailer/PHPMailer)
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: MIME-Version: 1.0
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:  boundary="b1=_JUfkltCIheEeSBsmDDiQ4mS5JtjbJ1fIUPOS4b7Iws"
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: 
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: --b1=_JUfkltCIheEeSBsmDDiQ4mS5JtjbJ1fIUPOS4b7Iws
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: 
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: 
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:         
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:         
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:             
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                 body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                 .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                 .header { background: linear-gradient(135deg, #0066cc, #00aaff); color: white; padding: 20px; border-radius: 10px 10px 0 0; }
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                 .content { background: #f9f9f9; padding: 20px; border-radius: 0 0 10px 10px; }
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                 .field { margin-bottom: 15px; }
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                 .label { font-weight: bold; color: #0066cc; }
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                 .value { margin-top: 5px; padding: 10px; background: white; border-radius: 5px; border-left: 3px solid #00aaff; }
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:             
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:         
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:         
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:             
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                 
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                     New Contact Form Submission
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                 
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                 
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                     
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                         Name:
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                         Taleb
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                     
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                     
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                         Email:
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                         taleb.sidahmed@mail.ru
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                     
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                     
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                         Message:
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                         Hello Taleb Chrif Seadne
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                     
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                     
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                         Submitted:
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                         February 8, 2026, 5:55 pm
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                     
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                 
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:             
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:         
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:         
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:         
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: 
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: --b1=_JUfkltCIheEeSBsmDDiQ4mS5JtjbJ1fIUPOS4b7Iws
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: 
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: 
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:         <html>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:         <head>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:             <style>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                 body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                 .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                 .header { background: linear-gradient(135deg, #0066cc, #00aaff); color: white; padding: 20px; border-radius: 10px 10px 0 0; }
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                 .content { background: #f9f9f9; padding: 20px; border-radius: 0 0 10px 10px; }
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                 .field { margin-bottom: 15px; }
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                 .label { font-weight: bold; color: #0066cc; }
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                 .value { margin-top: 5px; padding: 10px; background: white; border-radius: 5px; border-left: 3px solid #00aaff; }
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:             </style>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:         </head>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:         <body>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:             <div class='container'>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                 <div class='header'>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                     <h2>New Contact Form Submission</h2>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                 </div>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                 <div class='content'>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                     <div class='field'>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                         <div class='label'>Name:</div>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                         <div class='value'>Taleb</div>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                     </div>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                     <div class='field'>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                         <div class='label'>Email:</div>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                         <div class='value'>taleb.sidahmed@mail.ru</div>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                     </div>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                     <div class='field'>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                         <div class='label'>Message:</div>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                         <div class='value'>Hello Taleb Chrif Seadne</div>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                     </div>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                     <div class='field'>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                         <div class='label'>Submitted:</div>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                         <div class='value'>February 8, 2026, 5:55 pm</div>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                     </div>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:                 </div>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:             </div>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:         </body>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:         </html>
+
+2026-02-08 17:55:39 - CLIENT -> SERVER:         
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: 
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: 
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: --b1=_JUfkltCIheEeSBsmDDiQ4mS5JtjbJ1fIUPOS4b7Iws--
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: 
+
+2026-02-08 17:55:39 - CLIENT -> SERVER: .
+
+2026-02-08 17:55:40 - SERVER -> CLIENT: 250 2.0.0 OK  1770573340 38308e7fff4ca-386b62363e9sm20579331fa.1 - gsmtp
+
+2026-02-08 17:55:40 - CLIENT -> SERVER: QUIT
+
+2026-02-08 17:55:40 - SERVER -> CLIENT: 221 2.0.0 closing connection 38308e7fff4ca-386b62363e9sm20579331fa.1 - gsmtp
+
+2026-02-08 18:18:29 - SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 2adb3069b0e04-59e44e2195csm2027194e87.68 - gsmtp
+
+2026-02-08 18:18:29 - CLIENT -> SERVER: EHLO localhost
+
+2026-02-08 18:18:29 - SERVER -> CLIENT: 250-smtp.gmail.com at your service, [213.208.174.207]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2026-02-08 18:18:29 - CLIENT -> SERVER: STARTTLS
+
+2026-02-08 18:18:29 - SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+2026-02-08 18:18:29 - CLIENT -> SERVER: EHLO localhost
+
+2026-02-08 18:18:29 - SERVER -> CLIENT: 250-smtp.gmail.com at your service, [213.208.174.207]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2026-02-08 18:18:29 - CLIENT -> SERVER: AUTH LOGIN
+
+2026-02-08 18:18:29 - SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2026-02-08 18:18:29 - CLIENT -> SERVER: [credentials hidden]
+2026-02-08 18:18:30 - SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: [credentials hidden]
+2026-02-08 18:18:30 - SERVER -> CLIENT: 235 2.7.0 Accepted
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: MAIL FROM:<taleb.chrif200@gmail.com>
+
+2026-02-08 18:18:30 - SERVER -> CLIENT: 250 2.1.0 OK 2adb3069b0e04-59e44e2195csm2027194e87.68 - gsmtp
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: RCPT TO:<taleb.chrif200@gmail.com>
+
+2026-02-08 18:18:30 - SERVER -> CLIENT: 250 2.1.5 OK 2adb3069b0e04-59e44e2195csm2027194e87.68 - gsmtp
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: DATA
+
+2026-02-08 18:18:30 - SERVER -> CLIENT: 354 Go ahead 2adb3069b0e04-59e44e2195csm2027194e87.68 - gsmtp
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: Date: Sun, 8 Feb 2026 18:18:29 +0000
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: To: taleb.chrif200@gmail.com
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: From: Mauri-Alpha Contact Form <taleb.chrif200@gmail.com>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: Reply-To: Mauri-Alpha Contact Form <taleb.sidahmed@mail.ru>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: Subject: New Contact Form Message from Taleb chrif
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: Message-ID: <tFR5DpavG5pcStXTqU7OtIe0w9Q60nzqJjExrF0@localhost>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.2 (https://github.com/PHPMailer/PHPMailer)
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: MIME-Version: 1.0
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:  boundary="b1=_tFR5DpavG5pcStXTqU7OtIe0w9Q60nzqJjExrF0"
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: 
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: --b1=_tFR5DpavG5pcStXTqU7OtIe0w9Q60nzqJjExrF0
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: 
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: 
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:         
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:         
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:             
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                 body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                 .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                 .header { background: linear-gradient(135deg, #0066cc, #00aaff); color: white; padding: 20px; border-radius: 10px 10px 0 0; }
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                 .content { background: #f9f9f9; padding: 20px; border-radius: 0 0 10px 10px; }
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                 .field { margin-bottom: 15px; }
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                 .label { font-weight: bold; color: #0066cc; }
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                 .value { margin-top: 5px; padding: 10px; background: white; border-radius: 5px; border-left: 3px solid #00aaff; }
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:             
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:         
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:         
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:             
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                 
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                     New Contact Form Submission
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                 
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                 
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                     
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                         Name:
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                         Taleb chrif
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                     
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                     
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                         Email:
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                         taleb.sidahmed@mail.ru
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                     
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                     
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                         Message:
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                         jtjltj dsjlfjds jtlj dsjai lsitj
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                     
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                     
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                         Submitted:
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                         February 8, 2026, 6:18 pm
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                     
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                 
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:             
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:         
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:         
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:         
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: 
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: --b1=_tFR5DpavG5pcStXTqU7OtIe0w9Q60nzqJjExrF0
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: 
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: 
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:         <html>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:         <head>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:             <style>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                 body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                 .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                 .header { background: linear-gradient(135deg, #0066cc, #00aaff); color: white; padding: 20px; border-radius: 10px 10px 0 0; }
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                 .content { background: #f9f9f9; padding: 20px; border-radius: 0 0 10px 10px; }
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                 .field { margin-bottom: 15px; }
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                 .label { font-weight: bold; color: #0066cc; }
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                 .value { margin-top: 5px; padding: 10px; background: white; border-radius: 5px; border-left: 3px solid #00aaff; }
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:             </style>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:         </head>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:         <body>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:             <div class='container'>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                 <div class='header'>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                     <h2>New Contact Form Submission</h2>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                 </div>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                 <div class='content'>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                     <div class='field'>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                         <div class='label'>Name:</div>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                         <div class='value'>Taleb chrif</div>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                     </div>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                     <div class='field'>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                         <div class='label'>Email:</div>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                         <div class='value'>taleb.sidahmed@mail.ru</div>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                     </div>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                     <div class='field'>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                         <div class='label'>Message:</div>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                         <div class='value'>jtjltj dsjlfjds jtlj dsjai lsitj</div>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                     </div>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                     <div class='field'>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                         <div class='label'>Submitted:</div>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                         <div class='value'>February 8, 2026, 6:18 pm</div>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                     </div>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:                 </div>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:             </div>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:         </body>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:         </html>
+
+2026-02-08 18:18:30 - CLIENT -> SERVER:         
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: 
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: 
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: --b1=_tFR5DpavG5pcStXTqU7OtIe0w9Q60nzqJjExrF0--
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: 
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: .
+
+2026-02-08 18:18:30 - SERVER -> CLIENT: 250 2.0.0 OK  1770574711 2adb3069b0e04-59e44e2195csm2027194e87.68 - gsmtp
+
+2026-02-08 18:18:30 - CLIENT -> SERVER: QUIT
+
+2026-02-08 18:18:30 - SERVER -> CLIENT: 221 2.0.0 closing connection 2adb3069b0e04-59e44e2195csm2027194e87.68 - gsmtp
+
+2026-02-08 21:15:20 - SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 38308e7fff4ca-386b63b040dsm20646691fa.28 - gsmtp
+
+2026-02-08 21:15:20 - CLIENT -> SERVER: EHLO localhost
+
+2026-02-08 21:15:20 - SERVER -> CLIENT: 250-smtp.gmail.com at your service, [213.208.174.207]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2026-02-08 21:15:20 - CLIENT -> SERVER: STARTTLS
+
+2026-02-08 21:15:20 - SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+2026-02-08 21:15:20 - CLIENT -> SERVER: EHLO localhost
+
+2026-02-08 21:15:20 - SERVER -> CLIENT: 250-smtp.gmail.com at your service, [213.208.174.207]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2026-02-08 21:15:20 - CLIENT -> SERVER: AUTH LOGIN
+
+2026-02-08 21:15:20 - SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2026-02-08 21:15:20 - CLIENT -> SERVER: [credentials hidden]
+2026-02-08 21:15:21 - SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: [credentials hidden]
+2026-02-08 21:15:21 - SERVER -> CLIENT: 235 2.7.0 Accepted
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: MAIL FROM:<taleb.chrif200@gmail.com>
+
+2026-02-08 21:15:21 - SERVER -> CLIENT: 250 2.1.0 OK 38308e7fff4ca-386b63b040dsm20646691fa.28 - gsmtp
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: RCPT TO:<taleb.chrif200@gmail.com>
+
+2026-02-08 21:15:21 - SERVER -> CLIENT: 250 2.1.5 OK 38308e7fff4ca-386b63b040dsm20646691fa.28 - gsmtp
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: DATA
+
+2026-02-08 21:15:21 - SERVER -> CLIENT: 354 Go ahead 38308e7fff4ca-386b63b040dsm20646691fa.28 - gsmtp
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: Date: Sun, 8 Feb 2026 21:15:20 +0000
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: To: taleb.chrif200@gmail.com
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: From: Mauri-Alpha Contact Form <taleb.chrif200@gmail.com>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: Reply-To: Mauri-Alpha Contact Form <taleb.chrif@mifitt.net>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: Subject: New Contact Form Message from Taleb Chrif
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: Message-ID: <Lu88RMTAwAClnsb1MqeiDAvwYgit1TQ2i85wkYsUL8k@localhost>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.2 (https://github.com/PHPMailer/PHPMailer)
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: MIME-Version: 1.0
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:  boundary="b1=_Lu88RMTAwAClnsb1MqeiDAvwYgit1TQ2i85wkYsUL8k"
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: 
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: --b1=_Lu88RMTAwAClnsb1MqeiDAvwYgit1TQ2i85wkYsUL8k
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: 
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: 
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:         
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:         
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:             
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                 body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                 .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                 .header { background: linear-gradient(135deg, #0066cc, #00aaff); color: white; padding: 20px; border-radius: 10px 10px 0 0; }
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                 .content { background: #f9f9f9; padding: 20px; border-radius: 0 0 10px 10px; }
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                 .field { margin-bottom: 15px; }
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                 .label { font-weight: bold; color: #0066cc; }
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                 .value { margin-top: 5px; padding: 10px; background: white; border-radius: 5px; border-left: 3px solid #00aaff; }
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:             
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:         
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:         
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:             
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                 
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                     New Contact Form Submission
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                 
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                 
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                     
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                         Name:
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                         Taleb Chrif
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                     
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                     
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                         Email:
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                         taleb.chrif@mifitt.net
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                     
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                     
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                         Message:
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                         Taleb Chrif Ya7ly Uru9
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                     
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                     
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                         Submitted:
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                         February 8, 2026, 9:15 pm
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                     
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                 
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:             
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:         
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:         
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:         
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: 
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: --b1=_Lu88RMTAwAClnsb1MqeiDAvwYgit1TQ2i85wkYsUL8k
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: 
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: 
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:         <html>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:         <head>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:             <style>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                 body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                 .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                 .header { background: linear-gradient(135deg, #0066cc, #00aaff); color: white; padding: 20px; border-radius: 10px 10px 0 0; }
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                 .content { background: #f9f9f9; padding: 20px; border-radius: 0 0 10px 10px; }
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                 .field { margin-bottom: 15px; }
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                 .label { font-weight: bold; color: #0066cc; }
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                 .value { margin-top: 5px; padding: 10px; background: white; border-radius: 5px; border-left: 3px solid #00aaff; }
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:             </style>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:         </head>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:         <body>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:             <div class='container'>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                 <div class='header'>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                     <h2>New Contact Form Submission</h2>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                 </div>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                 <div class='content'>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                     <div class='field'>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                         <div class='label'>Name:</div>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                         <div class='value'>Taleb Chrif</div>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                     </div>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                     <div class='field'>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                         <div class='label'>Email:</div>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                         <div class='value'>taleb.chrif@mifitt.net</div>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                     </div>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                     <div class='field'>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                         <div class='label'>Message:</div>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                         <div class='value'>Taleb Chrif Ya7ly Uru9</div>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                     </div>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                     <div class='field'>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                         <div class='label'>Submitted:</div>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                         <div class='value'>February 8, 2026, 9:15 pm</div>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                     </div>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:                 </div>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:             </div>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:         </body>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:         </html>
+
+2026-02-08 21:15:21 - CLIENT -> SERVER:         
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: 
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: 
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: --b1=_Lu88RMTAwAClnsb1MqeiDAvwYgit1TQ2i85wkYsUL8k--
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: 
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: .
+
+2026-02-08 21:15:21 - SERVER -> CLIENT: 250 2.0.0 OK  1770585322 38308e7fff4ca-386b63b040dsm20646691fa.28 - gsmtp
+
+2026-02-08 21:15:21 - CLIENT -> SERVER: QUIT
+
+2026-02-08 21:15:21 - SERVER -> CLIENT: 221 2.0.0 closing connection 38308e7fff4ca-386b63b040dsm20646691fa.28 - gsmtp
+
