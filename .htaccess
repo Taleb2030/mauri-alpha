@@ -1,0 +1,26 @@
+# Security: Protect test and debug files
+<FilesMatch "^(test_email|test_email_detailed|debug_email|check_password|view_contacts|email_debug\.log)">
+    # Require authentication (you can remove this if you want to allow access)
+    # Or redirect to 404
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Protect data directory
+<FilesMatch "^(contacts_.*\.txt)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Enable error reporting (disable in production)
+# php_flag display_errors Off
+# php_flag log_errors On
+
+# Set default charset
+AddDefaultCharset UTF-8
+
+# Protect .htaccess and other sensitive files
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
