@@ -6,33 +6,28 @@
 }
 
 :root {
-    /* Single color: Mauritania green — one shade + light/dark variants */
+    /* One color only: Mauritania green #00A859 */
     --color: #00A859;
-    --color-light: #00D675;
-    --color-dark: #007A42;
     
-    /* All refs use the same color */
     --primary-green: var(--color);
-    --primary-gold: var(--color-light);
-    --primary-red: var(--color-dark);
+    --primary-gold: var(--color);
+    --primary-red: var(--color);
     --mauritania-green: var(--color);
-    --mauritania-green-dark: var(--color-dark);
-    --mauritania-green-light: var(--color-light);
+    --mauritania-green-dark: var(--color);
+    --mauritania-green-light: var(--color);
     --mauritania-gold: var(--color);
-    --mauritania-gold-dark: var(--color-dark);
-    --mauritania-gold-light: var(--color-light);
-    --accent-green: var(--color-light);
-    --accent-gold: var(--color-light);
-    --accent-emerald: var(--color-light);
+    --mauritania-gold-dark: var(--color);
+    --mauritania-gold-light: var(--color);
+    --accent-green: var(--color);
+    --accent-gold: var(--color);
+    --accent-emerald: var(--color);
     --accent-amber: var(--color);
     
-    /* Background (neutral dark) */
     --bg-dark: #0a0e14;
     --bg-darker: #050810;
     --bg-card: #0c1218;
     --bg-glass: rgba(12, 18, 24, 0.7);
     
-    /* Text (neutral white/gray) */
     --text-primary: #ffffff;
     --text-secondary: #b8d4c8;
     --text-muted: #6b8a7a;
@@ -46,11 +41,11 @@
     --glow-emerald: rgba(0, 168, 89, 0.3);
     
     --primary-blue: var(--color);
-    --dark-blue: var(--color-dark);
+    --dark-blue: var(--color);
     --darker-blue: #051a0f;
-    --light-blue: var(--color-light);
+    --light-blue: var(--color);
     --accent-blue: var(--color);
-    --accent-purple: var(--color-light);
+    --accent-purple: var(--color);
 }
 
 body {
@@ -284,10 +279,7 @@ html {
     right: -2px;
     bottom: -2px;
     border-radius: 50%;
-    background: linear-gradient(45deg, 
-        var(--color), 
-        var(--color-light), 
-        var(--color));
+    background: var(--color);
     background-size: 300% 300%;
     animation: logoRotate 3s linear infinite;
     z-index: -1;
@@ -328,7 +320,7 @@ html {
     filter: drop-shadow(0 4px 20px var(--glow-green)) 
             drop-shadow(0 0 30px var(--glow-green));
     transform: scale(1.15) rotate(8deg);
-    border-color: var(--color-light);
+    border-color: var(--color);
     box-shadow: 0 0 40px var(--glow-green), 
                 0 0 60px rgba(0, 168, 89, 0.3),
                 inset 0 0 30px rgba(0, 168, 89, 0.2);
@@ -338,7 +330,7 @@ html {
 .logo-text {
     font-size: 1.8rem;
     font-weight: bold;
-    background: linear-gradient(135deg, var(--color) 0%, var(--color-light) 50%, var(--color) 100%);
+    background: var(--color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -359,7 +351,7 @@ html {
 }
 
 .logo a:hover .logo-text {
-    background: linear-gradient(135deg, var(--color-light) 0%, var(--color) 50%, var(--color-light) 100%);
+    background: var(--color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -559,7 +551,7 @@ main {
 .hero h1 {
     font-size: 4rem;
     margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, var(--color) 0%, var(--color-light) 100%);
+    background: var(--color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -601,7 +593,7 @@ main {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--color) 0%, var(--color-light) 100%);
+    background: var(--color);
     color: var(--text-primary);
     position: relative;
     overflow: hidden;
@@ -627,7 +619,7 @@ main {
 .btn-primary:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px var(--glow-green), 0 0 35px rgba(0, 168, 89, 0.35);
-    background: linear-gradient(135deg, var(--color-light) 0%, var(--color) 100%);
+    background: var(--color);
 }
 
 .btn-secondary {
@@ -638,8 +630,8 @@ main {
 
 .btn-secondary:hover {
     background-color: rgba(0, 168, 89, 0.15);
-    color: var(--color-light);
-    border-color: var(--color-light);
+    color: var(--color);
+    border-color: var(--color);
     box-shadow: 0 0 20px var(--glow-green);
 }
 
@@ -652,7 +644,7 @@ main {
     font-size: 3rem;
     margin-bottom: 1.5rem;
     text-align: center;
-    background: linear-gradient(135deg, var(--text-primary) 0%, var(--color-light) 50%, var(--color) 100%);
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--color) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -671,7 +663,7 @@ main {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, var(--color), var(--color-light));
+    background: var(--color);
     border-radius: 2px;
     box-shadow: 0 0 10px var(--glow-green);
 }
@@ -713,7 +705,7 @@ main {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--color), var(--color-light));
+    background: var(--color);
     transform: scaleX(0);
     transition: transform 0.5s ease;
     box-shadow: 0 0 15px var(--glow-green);
@@ -752,7 +744,7 @@ main {
 .card-icon {
     font-size: 4rem;
     margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, var(--color), var(--color-light));
+    background: var(--color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -910,7 +902,7 @@ main {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--accent-blue), var(--light-blue));
+    background: var(--color);
     transform: scaleX(0);
     transition: transform 0.4s ease;
 }
@@ -938,7 +930,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--darker-blue), var(--primary-blue));
+    background: var(--color);
     border-radius: 50%;
     border: 3px solid var(--accent-blue);
     box-shadow: 0 8px 20px rgba(0, 168, 89, 0.3);
@@ -991,7 +983,7 @@ main {
 }
 
 .skill-tag {
-    background: linear-gradient(135deg, var(--darker-blue), var(--primary-blue));
+    background: var(--color);
     color: var(--accent-blue);
     padding: 0.5rem 1rem;
     border-radius: 20px;
@@ -1002,7 +994,7 @@ main {
 }
 
 .team-card:hover .skill-tag {
-    background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+    background: var(--color);
     color: var(--text-primary);
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0, 168, 89, 0.3);
@@ -1090,7 +1082,7 @@ main {
 .project-image {
     width: 100%;
     height: 220px;
-    background: linear-gradient(135deg, var(--color-dark) 0%, var(--color) 50%, var(--color-light) 100%);
+    background: var(--color);
     display: flex;
     align-items: center;
     justify-content: center;
