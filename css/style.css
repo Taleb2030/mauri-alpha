@@ -6,30 +6,57 @@
 }
 
 :root {
-    --primary-blue: #0066cc;
-    --dark-blue: #004499;
-    --darker-blue: #002d66;
-    --light-blue: #3399ff;
-    --accent-blue: #00aaff;
-    --accent-purple: #8b5cf6;
-    --accent-pink: #ec4899;
+    /* Mauritania Flag Colors - Beautiful Palette */
+    --mauritania-green: #00A859;
+    --mauritania-green-dark: #007A42;
+    --mauritania-green-light: #00D675;
+    --mauritania-gold: #FFD700;
+    --mauritania-gold-dark: #FFA500;
+    --mauritania-gold-light: #FFED4E;
+    --mauritania-red: #CE1126;
+    --mauritania-red-dark: #9B0E1C;
+    
+    /* Primary Colors - Inspired by Flag */
+    --primary-green: #00A859;
+    --primary-gold: #FFD700;
+    --primary-red: #CE1126;
+    
+    /* Accent Colors */
+    --accent-green: #00D675;
+    --accent-gold: #FFED4E;
+    --accent-emerald: #10B981;
+    --accent-amber: #F59E0B;
+    
+    /* Background Colors */
     --bg-dark: #0a0e1a;
     --bg-darker: #050810;
-    --bg-card: #151a28;
-    --bg-glass: rgba(21, 26, 40, 0.6);
+    --bg-card: #0f1a1f;
+    --bg-glass: rgba(15, 26, 31, 0.7);
+    
+    /* Text Colors */
     --text-primary: #ffffff;
-    --text-secondary: #b0b8c8;
-    --text-muted: #6b7280;
-    --border-color: #1e2432;
+    --text-secondary: #b8d4c8;
+    --text-muted: #6b8a7a;
+    --border-color: #1a2e28;
+    
+    /* Status Colors */
     --success: #10b981;
     --error: #ef4444;
-    --glow-blue: rgba(0, 170, 255, 0.4);
-    --glow-purple: rgba(139, 92, 246, 0.3);
+    
+    /* Glow Effects */
+    --glow-green: rgba(0, 168, 89, 0.5);
+    --glow-gold: rgba(255, 215, 0, 0.4);
+    --glow-emerald: rgba(16, 185, 129, 0.3);
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, var(--bg-darker) 0%, var(--bg-dark) 50%, var(--bg-darker) 100%);
+    background: linear-gradient(135deg, 
+        var(--bg-darker) 0%, 
+        rgba(10, 14, 26, 0.8) 25%,
+        rgba(0, 168, 89, 0.05) 50%,
+        rgba(10, 14, 26, 0.8) 75%,
+        var(--bg-darker) 100%);
     background-attachment: fixed;
     color: var(--text-primary);
     line-height: 1.6;
@@ -37,6 +64,21 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(0, 168, 89, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(255, 215, 0, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
 }
 
 /* Smooth scrolling */
@@ -53,19 +95,27 @@ html {
 
 /* Header Styles */
 .main-header {
-    background: linear-gradient(135deg, rgba(5, 8, 16, 0.95) 0%, rgba(10, 14, 26, 0.95) 100%);
+    background: linear-gradient(135deg, 
+        rgba(5, 8, 16, 0.95) 0%, 
+        rgba(10, 14, 26, 0.95) 50%,
+        rgba(15, 26, 31, 0.95) 100%);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(0, 170, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 168, 89, 0.2);
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 170, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), 
+                0 0 20px var(--glow-green),
+                inset 0 1px 0 rgba(255, 215, 0, 0.1);
     transition: all 0.3s ease;
 }
 
 .main-header:hover {
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 170, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), 
+                0 0 40px var(--glow-green),
+                0 0 60px rgba(255, 215, 0, 0.2);
+    border-bottom-color: rgba(0, 168, 89, 0.4);
 }
 
 .header-content {
@@ -81,6 +131,36 @@ html {
     gap: 1rem;
 }
 
+/* Mauritania Flag */
+.mauritania-flag {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+    animation: flagWave 3s ease-in-out infinite;
+}
+
+.flag-icon {
+    font-size: 2rem;
+    filter: drop-shadow(0 2px 8px rgba(0, 168, 89, 0.4));
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.flag-icon:hover {
+    transform: scale(1.2) rotate(5deg);
+    filter: drop-shadow(0 4px 16px rgba(255, 215, 0, 0.6));
+}
+
+@keyframes flagWave {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-3px) rotate(2deg);
+    }
+}
+
 /* Language Switcher */
 .language-switcher {
     position: relative;
@@ -90,9 +170,9 @@ html {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(0, 170, 255, 0.1);
-    border: 1px solid rgba(0, 170, 255, 0.3);
-    color: var(--accent-blue);
+    background: rgba(0, 168, 89, 0.1);
+    border: 1px solid rgba(0, 168, 89, 0.3);
+    color: var(--primary-green);
     padding: 0.5rem 1rem;
     border-radius: 8px;
     cursor: pointer;
@@ -152,14 +232,14 @@ html {
 }
 
 .lang-option:hover {
-    background: rgba(0, 170, 255, 0.15);
-    color: var(--accent-blue);
+    background: rgba(0, 168, 89, 0.15);
+    color: var(--primary-green);
     padding-left: 1.25rem;
 }
 
 .lang-option.active {
-    background: rgba(0, 170, 255, 0.2);
-    color: var(--accent-blue);
+    background: rgba(0, 168, 89, 0.2);
+    color: var(--primary-green);
     font-weight: 600;
 }
 
@@ -185,14 +265,14 @@ html {
     width: 50px;
     object-fit: cover;
     border-radius: 50%;
-    filter: drop-shadow(0 2px 8px rgba(0, 170, 255, 0.4));
+    filter: drop-shadow(0 2px 8px var(--glow-green));
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border: 2px solid var(--accent-blue);
+    border: 2px solid var(--primary-green);
     padding: 3px;
-    background: linear-gradient(135deg, var(--bg-card), var(--darker-blue));
-    box-shadow: 0 0 20px rgba(0, 170, 255, 0.3), 
-                0 0 40px rgba(0, 170, 255, 0.1),
-                inset 0 0 20px rgba(0, 170, 255, 0.1);
+    background: linear-gradient(135deg, var(--bg-card), var(--mauritania-green-dark));
+    box-shadow: 0 0 20px var(--glow-green), 
+                0 0 40px rgba(0, 168, 89, 0.2),
+                inset 0 0 20px rgba(0, 168, 89, 0.2);
     animation: logoPulse 3s ease-in-out infinite;
     position: relative;
 }
@@ -206,10 +286,10 @@ html {
     bottom: -2px;
     border-radius: 50%;
     background: linear-gradient(45deg, 
-        rgba(0, 170, 255, 0.5), 
-        rgba(139, 92, 246, 0.5), 
-        rgba(236, 72, 153, 0.5), 
-        rgba(0, 170, 255, 0.5));
+        var(--primary-green), 
+        var(--primary-gold), 
+        var(--accent-emerald), 
+        var(--primary-green));
     background-size: 300% 300%;
     animation: logoRotate 3s linear infinite;
     z-index: -1;
@@ -223,14 +303,14 @@ html {
 
 @keyframes logoPulse {
     0%, 100% {
-        box-shadow: 0 0 20px rgba(0, 170, 255, 0.3), 
-                    0 0 40px rgba(0, 170, 255, 0.1),
-                    inset 0 0 20px rgba(0, 170, 255, 0.1);
+        box-shadow: 0 0 20px var(--glow-green), 
+                    0 0 40px rgba(0, 168, 89, 0.2),
+                    inset 0 0 20px rgba(0, 168, 89, 0.2);
     }
     50% {
-        box-shadow: 0 0 30px rgba(0, 170, 255, 0.5), 
-                    0 0 60px rgba(0, 170, 255, 0.2),
-                    inset 0 0 30px rgba(0, 170, 255, 0.2);
+        box-shadow: 0 0 30px var(--glow-green), 
+                    0 0 60px rgba(255, 215, 0, 0.3),
+                    inset 0 0 30px rgba(255, 215, 0, 0.2);
     }
 }
 
@@ -247,13 +327,13 @@ html {
 }
 
 .logo a:hover .logo-img {
-    filter: drop-shadow(0 4px 20px rgba(0, 170, 255, 0.8)) 
-            drop-shadow(0 0 30px rgba(139, 92, 246, 0.4));
+    filter: drop-shadow(0 4px 20px var(--glow-green)) 
+            drop-shadow(0 0 30px var(--glow-gold));
     transform: scale(1.15) rotate(8deg);
-    border-color: var(--light-blue);
-    box-shadow: 0 0 40px rgba(0, 170, 255, 0.6), 
-                0 0 80px rgba(0, 170, 255, 0.3),
-                inset 0 0 30px rgba(0, 170, 255, 0.3);
+    border-color: var(--primary-gold);
+    box-shadow: 0 0 40px var(--glow-green), 
+                0 0 80px var(--glow-gold),
+                inset 0 0 30px rgba(255, 215, 0, 0.3);
     animation: logoPulse 1s ease-in-out infinite;
 }
 
@@ -261,15 +341,16 @@ html {
     font-size: 1.8rem;
     font-weight: bold;
     background: linear-gradient(135deg, 
-        var(--accent-blue) 0%, 
-        var(--light-blue) 50%, 
-        var(--accent-purple) 100%);
+        var(--primary-green) 0%, 
+        var(--accent-green) 40%,
+        var(--primary-gold) 60%,
+        var(--accent-gold) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     letter-spacing: 1px;
     transition: all 0.4s ease;
-    text-shadow: 0 0 20px rgba(0, 170, 255, 0.3);
+    text-shadow: 0 0 20px var(--glow-green);
     position: relative;
     animation: textShine 3s ease-in-out infinite;
 }
@@ -285,17 +366,18 @@ html {
 
 .logo a:hover .logo-text {
     background: linear-gradient(135deg, 
-        var(--light-blue) 0%, 
-        var(--accent-blue) 30%,
-        var(--accent-purple) 60%,
-        var(--accent-pink) 100%);
+        var(--primary-gold) 0%, 
+        var(--accent-gold) 25%,
+        var(--primary-green) 50%,
+        var(--accent-green) 75%,
+        var(--primary-gold) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     background-size: 200% 200%;
     animation: textShine 1s ease-in-out infinite;
     transform: scale(1.05);
-    filter: drop-shadow(0 0 10px rgba(0, 170, 255, 0.5));
+    filter: drop-shadow(0 0 10px var(--glow-gold));
 }
 
 /* Mobile Menu Toggle Button */
@@ -538,11 +620,17 @@ main {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-blue) 50%, var(--light-blue) 100%);
+    background: linear-gradient(135deg, 
+        var(--primary-green) 0%, 
+        var(--accent-green) 40%,
+        var(--primary-gold) 60%,
+        var(--accent-gold) 100%);
     color: var(--text-primary);
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 170, 255, 0.3);
+    box-shadow: 0 4px 15px var(--glow-green),
+                0 0 20px rgba(255, 215, 0, 0.2);
+    border: 1px solid rgba(255, 215, 0, 0.3);
 }
 
 .btn-primary::before {
@@ -552,7 +640,7 @@ main {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
     transition: left 0.5s ease;
 }
 
@@ -562,13 +650,28 @@ main {
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 170, 255, 0.5), 0 0 20px rgba(0, 170, 255, 0.3);
+    box-shadow: 0 8px 25px var(--glow-green), 
+                0 0 30px var(--glow-gold),
+                0 0 40px rgba(255, 215, 0, 0.4);
+    background: linear-gradient(135deg, 
+        var(--accent-green) 0%, 
+        var(--primary-green) 30%,
+        var(--primary-gold) 50%,
+        var(--accent-gold) 70%,
+        var(--primary-gold) 100%);
 }
 
 .btn-secondary {
     background-color: transparent;
-    color: var(--accent-blue);
-    border: 2px solid var(--accent-blue);
+    color: var(--primary-green);
+    border: 2px solid var(--primary-green);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(0, 168, 89, 0.1);
+    color: var(--accent-green);
+    border-color: var(--primary-gold);
+    box-shadow: 0 0 20px var(--glow-green);
 }
 
 .btn-secondary:hover {
